@@ -7,6 +7,6 @@ private:
 
 	int lobe1Count;
 	int lobe2Count;
-    
+	int lobe3Count;
 };
 
