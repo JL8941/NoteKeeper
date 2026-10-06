@@ -44,7 +44,10 @@ Each week I will summarize my milestone activity and progress by writing a stand
 
 ### Week 1
 
-Replace this paragraph with your stand up for this week. Use the prompts above to summarize your most recent milestone activity and work.
+Brain class .h/cpp
+The most challenge I have had was putting together material resources while navigating git inside windows terminal. Found some windows guides, It's just Windows. I tried to see if there were any terminal emulators that had a linux style, but, I had fell back to only using visual console for progress. 
+Started with the brain class
+
 
 ### Week 2
 
