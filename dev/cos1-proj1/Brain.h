@@ -6,7 +6,7 @@ class Brain
 private:
 
 	int lobe1Count;
-	int lobe1Count;
+	int lobe2Count;
     
 };
 
