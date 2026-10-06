@@ -45,7 +45,7 @@ Each week I will summarize my milestone activity and progress by writing a stand
 ### Week 1
 
 Brain class .h/cpp
-After starting late this week my focus has been in managing material resources while working  with git inside windows terminal. I tried to look into some windows-specific guides since I was having trouble with incorrect windows commanding.  I explored whether there was any terminal emulators with a linux style workflow, but then fell back to using visual studio console. I started defining the brain class and laid out three lobe variables that will represent the dominant frontal lobe, cognition that will represent the temporal lobe, and the neural love that represents the parietal. 
+After starting late this week my focus has been in managing material resources while working  with git inside windows terminal. I tried to look into some windows-specific guides since I was having trouble with incorrect windows commanding.  I explored whether there was any terminal emulators with a linux style workflow, but then fell back to using visual studio console. I started defining the brain class and laid out three lobe variables that will represent the dominant lobe, cognition, lobe, and the neural. The next priority is continuing adding the accessors and mutators and void methods.
 
 
 ### Week 2

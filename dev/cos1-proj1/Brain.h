@@ -14,5 +14,10 @@ private:
 	std::string cognitiveLobe2;
 	std::string neuralLobe3;
 
+public: // accessibility outside the class
+	Brain(); // declaire default 
+
+	// overloaded constructor
+	Brain(int dominantLobe1, std::string cognitiveLobe2, std::string neuralLobe3);
 };
 
