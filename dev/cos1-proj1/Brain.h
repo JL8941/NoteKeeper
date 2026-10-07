@@ -19,5 +19,10 @@ public: // accessibility outside the class
 
 	// overloaded constructor
 	Brain(int dominantLobe1, std::string cognitiveLobe2, std::string neuralLobe3);
+
+	// accessor methods returns, do not change objects
+	int GetLobe1Count() const;
+	
+
 };
 
