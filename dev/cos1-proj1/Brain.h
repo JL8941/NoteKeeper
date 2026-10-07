@@ -22,6 +22,7 @@ public: // accessibility outside the class
 
 	// accessor methods returns, do not change objects
 	int GetLobe1Count() const;
+	std::string GetLobe2State() const;
 	
 
 };
