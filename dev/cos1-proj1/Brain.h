@@ -24,6 +24,12 @@ public: // accessibility outside the class
 	int GetLobe1Count() const;
 	std::string GetLobe2State() const;
 	std::string GetLobe3Map() const;
+	// get all notes without changing objects
+	std::string GetAllNotes() const;
+	// mutators changes the objects states
+	void SetLobe1Count(int newCount);
+	void SetLobe2State(std::string newState);
+	void SetLobe3Map(std::string newMap);
 
 };
 
