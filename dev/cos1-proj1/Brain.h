@@ -31,5 +31,9 @@ public: // accessibility outside the class
 	void SetLobe2State(std::string newState);
 	void SetLobe3Map(std::string newMap);
 
+	// for functions actions and clearing
+	void ActivateAllLobes(); 
+	void ClearAllStates();
+
 };
 
