@@ -21,9 +21,21 @@
     <ClCompile Include="Brain.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Note.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Notemanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Brain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Note.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Notemanager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

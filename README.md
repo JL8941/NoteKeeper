@@ -50,7 +50,7 @@ After starting late this week my focus has been in managing material resources w
 
 ### Week 2
 
-From To-Do -to- In Progress I have added the integers and strings accessor methods, as const, they will not change objects. Next, is one more accessor string that will be for take in all note thoughts for status before implementing mutators and void methods. Here I reflect and look back from previous classes as i work on main and adding the display menu to have 1-8 choices. 
+From To-Do -to- In Progress I have added the integers and strings accessor methods, as const, they will not change objects. Next, is one more accessor string that will be for take in all note thoughts for status before implementing mutators and void methods. Here I reflect and look back from previous classes as i work on main and adding the display menu to have 1-8 choices. Current in progression is is main and brain cpp.
 
 ### Week 3
 

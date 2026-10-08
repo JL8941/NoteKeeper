@@ -13,3 +13,10 @@ Brain::Brain() {
 	cognitiveLobe2 = "idle";
 	neuralLobe3 = "disconnected";
 }
+
+Brain::Brain(int dominantLobe1, std::string cognitiveLobe2, std::string neuralLobe3)
+{
+	lobe1Count = dominantLobe1;
+	lobe2Count = 0;
+	lobe3Count = 0; 
+}
