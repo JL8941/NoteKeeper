@@ -19,4 +19,21 @@ Brain::Brain(int dominantLobe1, std::string cognitiveLobe2, std::string neuralLo
 	lobe1Count = dominantLobe1;
 	lobe2Count = 0;
 	lobe3Count = 0; 
+
+	this->dominantLobe1 = cognitiveLobe2;
+	this->cognitiveLobe2 = cognitiveLobe2;
+	this->neuralLobe3 = neuralLobe3;
+
+} // accessors from brain.h
+int Brain::GetLobe1Count() const {
+	return lobe1Count;
+}
+std::string Brain::GetLobe2State() const {
+	return cognitiveLobe2;
+}
+std::string Brain::GetLobe3Map() const {
+	return neuralLobe3;
+}
+std::string Brain::GetAllNotes() const {
+
 }
