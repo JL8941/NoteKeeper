@@ -27,7 +27,11 @@ int DisplayMainMenu() {
     return choice;
 
 }
-int main()
+int main() 
 {
+    // default construct
+    Brain myBrain;
     int choice = DisplayMainMenu();
+
+    std::cout << "\n NoteKeeper: Brain-Driven Note System\n\n";
 }

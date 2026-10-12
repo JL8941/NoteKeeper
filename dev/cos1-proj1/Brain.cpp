@@ -1,5 +1,6 @@
 #include <iostream>
 #include "Brain.h"
+#include <string>
 
 
 Brain::Brain() {
@@ -35,5 +36,15 @@ std::string Brain::GetLobe3Map() const {
 	return neuralLobe3;
 }
 std::string Brain::GetAllNotes() const {
-
+	std::string result = "";
+	// starting with empty string, and building string concat
+	result += "=== Notekeeper State ===\n";
+	result += "Dominant Note (Active):" + std::to_string(lobe1Count) + " active note thoughts\n";
+	result += " Parttern: " + dominantLobe1 + "\n";
+	result += "Cognitive Note (Memory):" + std::to_string(lobe2Count) + " memory notes stored\n";
+	result += " Status: " + cognitiveLobe2 + "\n";
+	result += "Neural Note (Connections):" + std::to_string(lobe1Count) + " links\n";
+	result += " Map: " + neuralLobe3 + "\n";
+	
+	return result;
 }
