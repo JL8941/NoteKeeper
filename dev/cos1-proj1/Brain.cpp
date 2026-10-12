@@ -45,6 +45,14 @@ std::string Brain::GetAllNotes() const {
 	result += " Status: " + cognitiveLobe2 + "\n";
 	result += "Neural Note (Connections):" + std::to_string(lobe1Count) + " links\n";
 	result += " Map: " + neuralLobe3 + "\n";
-	
+	result += "=========================\n";
 	return result;
 }
+// mutators setters for lobe
+void Brain::SetLobe1Count(int newCount) {
+	if (newCount >= 0) {
+		lobe1Count = newCount;
+	}
+	else {
+		std::cerr << "Error: This lobe cannot be negative." << std::endl;
+	}
