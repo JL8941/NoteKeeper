@@ -56,3 +56,9 @@ void Brain::SetLobe1Count(int newCount) {
 	else {
 		std::cerr << "Error: This lobe cannot be negative." << std::endl;
 	}
+}
+void Brain::SetLobe2State(std::string newMap) {
+	if (!newMap.empty()) {
+		neuralLobe3 = newMap;
+	}
+}
