@@ -62,3 +62,24 @@ void Brain::SetLobe2State(std::string newMap) {
 		neuralLobe3 = newMap;
 	}
 }
+void Brain::ActivateAllLobes() {
+	lobe1Count++;
+	lobe2Count++;
+	lobe3Count++;
+
+	dominantLobe1 = "activated";
+	cognitiveLobe2 = "process";
+	neuralLobe3 = "connected";
+}
+// clearing states
+void Brain::ClearAllStates() {
+	// reuse values, reset to the same constructors 
+
+	lobe1Count = 0;
+	lobe2Count = 0;
+	lobe3Count = 0; 
+
+	dominantLobe1 = "inactived";
+	cognitiveLobe2 = "idle";
+	neuralLobe3 = "disconnected";
+}

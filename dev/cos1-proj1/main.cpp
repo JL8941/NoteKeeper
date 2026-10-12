@@ -34,4 +34,36 @@ int main()
     int choice = DisplayMainMenu();
 
     std::cout << "\n NoteKeeper: Brain-Driven Note System\n\n";
+    // bool starts the loop, user selection calls function and stores the return
+    bool running = true;
+    while (running) { 
+        int choice = DisplayMainMenu();
+
+        switch (choice) {
+        case 1:
+            std::cout << "\n" << myBrain.GetAllNotes();
+            break;
+        case 2: {
+            std::cout << "\n === Add New Note ===\n";
+            std::cout << "Title: ";
+            std::string title;
+            std::cin.ignore();
+            std::getline(std::cin, title);
+
+            std::cout << "Content: ";
+            std::string content;
+            std::getline(std::cin, content);
+
+            std::cout << "Category (work/personal/idea): ";
+            std::string category;
+            std::getline(std::cin, category);
+            
+            std::cout << "Lobe (1/2/3)";
+            int lobe;
+            std::cin >> lobe;
+            // create and store the notes
+            
+        }
+        }
+    }
 }
