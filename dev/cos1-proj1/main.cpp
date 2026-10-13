@@ -31,7 +31,7 @@ int main()
 {
     // default construct
     Brain myBrain;
-    int choice = DisplayMainMenu();
+    
 
     std::cout << "\n NoteKeeper: Brain-Driven Note System\n\n";
     // bool starts the loop, user selection calls function and stores the return
@@ -61,6 +61,7 @@ int main()
             std::cout << "Lobe (1/2/3)";
             int lobe;
             std::cin >> lobe;
+            break;
             // create and store the notes
             
         }
