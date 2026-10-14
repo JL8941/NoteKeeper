@@ -20,7 +20,6 @@ int DisplayMainMenu() {
     std::cout << "[    8. Exit                  ]\n";
     std::cout << "[  =========================  ]\n";
     std::cout << "     Enter choice (1-8): ";
-   
 
     int choice;
     std::cin >> choice;
@@ -32,6 +31,7 @@ int main()
     // default construct
     Brain myBrain;
     
+   
 
     std::cout << "\n NoteKeeper: Brain-Driven Note System\n\n";
     // bool starts the loop, user selection calls function and stores the return
@@ -46,6 +46,7 @@ int main()
         case 2: {
             std::cout << "\n === Add New Note ===\n";
             std::cout << "Title: ";
+
             std::string title;
             std::cin.ignore();
             std::getline(std::cin, title);
@@ -61,6 +62,7 @@ int main()
             std::cout << "Lobe (1/2/3)";
             int lobe;
             std::cin >> lobe;
+
             break;
             // create and store the notes
             

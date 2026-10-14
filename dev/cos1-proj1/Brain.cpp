@@ -79,7 +79,7 @@ void Brain::ClearAllStates() {
 	lobe2Count = 0;
 	lobe3Count = 0; 
 
-	dominantLobe1 = "inactived";
+	dominantLobe1 = "inactive";
 	cognitiveLobe2 = "idle";
 	neuralLobe3 = "disconnected";
 }
