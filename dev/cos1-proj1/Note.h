@@ -16,9 +16,6 @@ private:
 	int createOrder;
 	int lobeAssociation;
 
-	int createOder;
-	int lobeAssociation;
-
 public: 
 	Note(); // default constructor 
 	Note(std::string noteTitle, std::string noteContent, std::string noteCategory, int lobeNum);
@@ -30,10 +27,14 @@ public:
 	std::string GetContent() const;
 	std::string GetCategory() const;
 	std::string GetCreateOrder() const;
-
 	int GetLobeAssociation() const;
 
-	
+	void SetTitle(std::string newTitle);
+	void SetContent(std::string newContent);
+	void SetCategory(std::string newCategory);
+	void Set(int lobeNum);
+
+	std::string GetFullNote();
 
 };
 
