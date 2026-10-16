@@ -61,3 +61,18 @@ void Note::SetLobeAssociation(int lobeNum) {
 std::string Note::GetFullNote() {
 	std::string result = "";
 
+	// the empty string starts and contructs so the += can allocate heap depending on the total length
+
+// building the concatenation for each append
+
+	result += "\n ===================================================\n";
+	result += " = Note #" + std::to_string(id) + " | " + category + "\n";
+	result += "\n ===================================================\n";
+	result += " = Content:\n" + content + "\n";
+	result += "\n ===================================================\n";
+	result += " = Created: " + GetCreateOrder() + "\n";
+	result += "\n ===================================================\n";
+	result += " = Lobe: " + std::to_string(lobeAssociation) + "\n";
+	result += "\n ===================================================\n";
+	return result;
+}
