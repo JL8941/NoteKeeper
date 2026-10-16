@@ -32,7 +32,7 @@ public:
 	void SetTitle(std::string newTitle);
 	void SetContent(std::string newContent);
 	void SetCategory(std::string newCategory);
-	void Set(int lobeNum);
+	void SetLobeAssociation(int lobeNum);
 
 	std::string GetFullNote();
 

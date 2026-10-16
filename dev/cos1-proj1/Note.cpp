@@ -23,4 +23,41 @@ Note::Note(std::string noteTitle, std::string noteContent, std::string noteCateg
 	if (lobeNum < 1 || lobeNum > 3) {
 		lobeAssociation = 1;  
 	}
+} // calling in the accessors and mutators, for Id, title, category, createorder
+  // void mutators have title if not empty validation and assignment, and range method for lobe association
+int Note::GetId() const {
+	return id; 
 }
+std::string Note::GetTitle() const {
+	return title;
+}
+std::string Note::GetCategory() const {
+	return category;
+}
+std::string Note::GetCreateOrder() const {
+	return "Note #" + std::to_string(createOrder);
+}
+int Note::GetLobeAssociation() const {
+	return lobeAssociation;
+}
+void Note::SetTitle(std::string newTitle) {
+	if (!newTitle.empty()) {
+		title = newTitle;
+	}
+}
+void Note::SetContent(std::string newContent){
+	content = newContent;
+	}
+void Note::SetCategory(std::string newCategory) {
+	if (!newCategory.empty()) {
+		category = newCategory;
+	}
+}
+void Note::SetLobeAssociation(int lobeNum) {
+	if (lobeNum >= 1 && lobeNum <= 3) {
+		lobeAssociation = lobeNum;
+	}
+}
+std::string Note::GetFullNote() {
+	std::string result = "";
+
