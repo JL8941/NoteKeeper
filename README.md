@@ -54,8 +54,8 @@ From To-Do -to- In Progress I have added the integers and strings accessor metho
 
 
 ### Week 3
+This week I had caught up on notemanager implementing the default constructors and working on the save and load methods that handle  users input notes. I also worked on the brain method which manage the pointers to the note objects. looking ahead i plan to add file name object to override the default, and with the supporting the file i/o. I have been tracking through the github issues and project board, which shows the open issues. 
 
-Stay tuned, this stand up is coming soon...
 
 ### Week 4
 

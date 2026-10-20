@@ -3,16 +3,16 @@
 #include "Brain.h"
 #include <vector>
 #include <string>
-class Notemanager
+class NoteManager
 { // vector of note objects, brain object pointer
 	std::vector<Note> notes;
 	Brain* brainPtr;
 
 	std::string saveFileName;
 public:  // Default and overload constructors
-	Notemanager(); 
+	NoteManager(); 
 
-	Notemanager(Brain* associatedBrain);
+	NoteManager(Brain* associatedBrain);
 	// add note to collection, delete note by the id
 	void AddNote(Note newNote);
 	bool DeleteNote(int noteId);
