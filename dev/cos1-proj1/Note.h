@@ -34,7 +34,7 @@ public:
 	void SetCategory(std::string newCategory);
 	void SetLobeAssociation(int lobeNum);
 
-	std::string GetFullNote();
+	std::string GetFullNote() const;
 
 };
 

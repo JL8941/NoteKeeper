@@ -58,7 +58,7 @@ void Note::SetLobeAssociation(int lobeNum) {
 		lobeAssociation = lobeNum;
 	}
 }
-std::string Note::GetFullNote() {
+std::string Note::GetFullNote() const {
 	std::string result = "";
 
 	// the empty string starts and contructs so the += can allocate heap depending on the total length
