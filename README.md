@@ -59,4 +59,4 @@ This week I had caught up on notemanager implementing the default constructors a
 
 ### Week 4
 
-My final stand up...
+This week I have worked on and caught up with main.cpp and switch and updating notes, note manager,  and the save and load methods, I had to do corrections from debugs which was placements of brackets, and a few naming within the notes for save and load. Did not get to implement conole.h/cpp for decorative display.
