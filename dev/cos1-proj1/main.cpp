@@ -28,7 +28,7 @@ int DisplayMainMenu() {
     return choice;
 
 }
-int main() 
+int main()
 {
     // default construct
     Brain myBrain;
@@ -44,6 +44,7 @@ int main()
         case 1:
             std::cout << "\n" << myBrain.GetAllNotes();
             break;
+
 
         case 2: {
             std::cout << "\n === Add New Note ===\n";
@@ -72,6 +73,7 @@ int main()
         case 3:
             manager.PrintNoteSummary();
             break;
+
 
         case 4: {
             std::cout << "\nEnter Note to find ID:\n";
@@ -102,10 +104,12 @@ int main()
         }
         case 6: {
             std::cout << "\nSaving notes.\n";
+            manager.SaveToFile("notes_save.dat");
             break;
         }
         case 7: {
             std::cout << "\nLoading notes.\n";
+            manager.LoadFromFile("notes_save.dat");
             break;
         }
         case 8: {
@@ -117,8 +121,9 @@ int main()
             std::cout << "\nInvalid choice, try again.";
             break;
         }
-        
-    
+    }
+    return 0;
+}
 
-        
+    
         

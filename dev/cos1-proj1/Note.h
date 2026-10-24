@@ -24,7 +24,10 @@ public:
 	
 	int GetId() const;
 	std::string GetTitle() const;
-	std::string GetContent() const;
+	std::string GetContent() const {
+		return content;
+	}
+	
 	std::string GetCategory() const;
 	std::string GetCreateOrder() const;
 	int GetLobeAssociation() const;

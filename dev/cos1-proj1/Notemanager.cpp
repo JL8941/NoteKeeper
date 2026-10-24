@@ -68,9 +68,59 @@ NoteManager::NoteManager() {
 		}
 	}
 
-		bool NoteManager::SaveToFile(std::string filename) {
-			std::ofstream outFile(filename);
+	bool NoteManager::SaveToFile(std::string filename) {
+		std::ofstream outFile(filename);
+
+		if (!outFile) {
+			std::cerr << "Error: could not open " << filename << " for writing.\n";
+			return false;
+		}
+		for (const Note& note : notes) {
+			outFile << note.GetId() << "|" << note.GetTitle() << "|" << note.GetContent() << "|" << note.GetCategory() << "|" << note.GetLobeAssociation() << "\n";
 
 		}
+		outFile.close();
+		std::cout << "\nSaved " << notes.size() << " notes to " << filename << "\n";
+		
+			return true;
+	}
+		
 	
-	
+	bool NoteManager::LoadFromFile(std::string filename) {
+		std::ifstream inFile(filename);
+		if (!inFile) {
+			std::cerr << "Error: could not open " << filename << " for reading. \n";
+			return false;
+		}
+		notes.clear();
+		std::string line;
+
+		while (std::getline(inFile, line)) {
+			if (line.empty()) continue;
+
+			std::stringstream ss(line);
+			std::string token;
+			std::vector<std::string> fields;
+
+			while (std::getline(ss, token, '|')) {
+				fields.push_back(token);
+			}
+			if (fields.size() < 5) {
+				std::cerr << "Warning: skipping malformed line.\n";
+				continue;
+			}
+
+			std::string title = fields[1];
+			std::string content = fields[2];
+			std::string category = fields[3];
+			int lobe = std::stoi(fields[4]);
+
+			Note loadedNote(title, content, category, lobe);
+			notes.push_back(loadedNote);
+		}
+
+			inFile.close();
+			std::cout << "\nLoaded " << notes.size() << " notes from " << filename << "\n";
+			return true;
+		}
+		
