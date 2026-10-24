@@ -19,7 +19,7 @@ public:  // Default and overload constructors
 
 	Note* FindNoteById(int noteId);
 	std::vector<Note> GetAllNotes() const; 
-	// vectors to ocpy and filter by lobes
+	// vectors to copy and filter by lobes
 	std::vector<Note> GetNotesByLobe(int lobeNum) const;
 
 	int GetNoteCount() const; // counts how many notes
