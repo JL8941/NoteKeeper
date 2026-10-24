@@ -25,5 +25,7 @@ public:  // Default and overload constructors
 	int GetNoteCount() const; // counts how many notes
 
 	void PrintNoteSummary();  // display all the notes
+	bool SaveToFile(std::string filename);
+	bool LoadFromFile(std::string filename);
 };
 

@@ -66,10 +66,11 @@ NoteManager::NoteManager() {
 		for (const Note& note : notes) {
 			std::cout << note.GetFullNote();
 		}
+	}
 
 		bool NoteManager::SaveToFile(std::string filename) {
 			std::ofstream outFile(filename);
 
 		}
-	}
+	
 	
